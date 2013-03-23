@@ -7,6 +7,7 @@ var fs = require('fs');
 
 program
   .version(packageJson.version) //Dynamic verison number based on version in package.json
+  .option('-d, --dbconn', 'Test connection')
   .option('-i, --instagram <action>', 'Instagram integration [server] to start O-Auth component')
 	.parse(process.argv);
 
@@ -37,6 +38,18 @@ if(program.instagram)
 			app.listen(3000);
 		}
 	}
+}
+else if(program.dbconn)
+{
+	var MongoClient = require('mongodb').MongoClient , Server = require('mongodb').Server;
+	var mongoClient = new MongoClient(new Server('localhost', 27017));
+
+	mongoClient.open(function(err, mongoClient) {
+		var db1 = mongoClient.db("octo-nemesis");
+		console.log("test");
+
+		mongoClient.close();
+	});
 }
 else
 {
