@@ -25,17 +25,24 @@ if(program.instagram)
 	{
 		if(program.instagram[0] == 'server')
 		{
-			//Start up an Instagram OAuth Server component.
-			var express = require('express');
-			var app = express();
+			try
+			{
+				//Start up an Instagram OAuth Server component.
+				var express = require('express');
+				var app = express();
 
-			app.use(express.static('static'));
+				app.use(express.static('static'));
 
-			app.get('/', function(req, res){
-				res.send('hello world');
-			});
+				app.get('/', function(req, res){
+					res.send('hello world');
+				});
 
-			app.listen(80);
+				app.listen(80);
+			}
+			catch(e)
+			{
+				console.log(e);
+			}
 		}
 	}
 }
