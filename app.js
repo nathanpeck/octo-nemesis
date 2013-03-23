@@ -35,7 +35,7 @@ if(program.instagram)
 				res.send('hello world');
 			});
 
-			app.listen(3000);
+			app.listen(80);
 		}
 	}
 }
