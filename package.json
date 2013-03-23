@@ -15,7 +15,8 @@
   },
   "dependencies" : {
     "instagram-node-lib"   :  "*",
-    "ntwitter"             :  "*"
+    "ntwitter"             :  "*",
+    "commander"            :  "*"
   },
   "analyze": true,
   "license": "MIT",
