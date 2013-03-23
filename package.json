@@ -18,7 +18,8 @@
     "instagram-node-lib"   :  "*",
     "ntwitter"             :  "*",
     "commander"            :  "*",
-    "mongodb"              :  "*"
+    "mongodb"              :  "*",
+    "express"              :  "3.x"
   },
   "analyze": true,
   "license": "MIT",

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Instagram OAuth Skeleton</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+
+        <p>This is a simple OAuth page for Instagram.</p>
+
+        <form method='GET' action='https://api.instagram.com/oauth/authorize/'>
+            Redirect URI:<br />
+            <input type='text' name='redirect_uri' value='' /><br />
+            Client ID:<br />
+            <input type='text' name='client_id' /><br />
+            <input type='hidden' name='response_type' value='code' />
+            <input type='submit' />
+        </form>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
