@@ -14,6 +14,7 @@
     "url": "https://github.com/nathanpeck/octo-nemesis.git"
   },
   "dependencies" : {
+    "facebook-sdk"         :  "*",
     "instagram-node-lib"   :  "*",
     "ntwitter"             :  "*"
   },
