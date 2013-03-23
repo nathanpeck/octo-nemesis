@@ -14,7 +14,8 @@
     "url": "https://github.com/nathanpeck/octo-nemesis.git"
   },
   "dependencies" : {
-    "instagram-node-lib"   :  "*"
+    "instagram-node-lib"   :  "*",
+    "ntwitter"             :  "*"
   },
   "analyze": true,
   "license": "MIT",
