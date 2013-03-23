@@ -17,7 +17,8 @@
     "facebook-sdk"         :  "*",
     "instagram-node-lib"   :  "*",
     "ntwitter"             :  "*",
-    "commander"            :  "*"
+    "commander"            :  "*",
+    "mongodb"              :  "*"
   },
   "analyze": true,
   "license": "MIT",
