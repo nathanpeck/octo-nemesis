@@ -1,0 +1,24 @@
+{
+  "name": "octo-nemesis",
+  "version": "0.0.1",
+  "author": "Nathan Peck <nathan@storydesk.com>",
+  "description": "A tool for exporting content from social networks and turning it into a static blog that you own.",
+  "contributors": [
+    {
+      "name": "Jason Ghent",
+      "email": "jason.ghent@storydesk.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nathanpeck/octo-nemesis.git"
+  },
+  "dependencies" : {
+    "instagram-node-lib"   :  "*"
+  },
+  "analyze": true,
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.6"
+  }
+}
